@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Tarjeta</title>
+
+</head>
+
+<body>
+    <section class="fashion-products py-5">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <article class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Minimal Coat" class="product-card__image"/>
+                        </div>
+
+                        <div class="product-card__content">
+                            <span class="product-card__category">OUTERWEAR</span>
+                            <h3 class="product-card__title">Abrigo de Lana</h3>
+                            <p class="product-card__price">$149.00</p>
+                            <button class="product-card__button" data-bs-toggle="modal" data-bs-target="#productModal">Ver Detalles</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content product-modal">
+                <button type="button" class="btn-close product-modal__close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <div class="product-modal__image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1539533113208-f6df8cc8b543?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Product" class="product-modal__image"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="product-modal__content">
+                            <span class="product-modal__category">OUTERWEAR</span>
+                            <h2 class="product-modal__title">Abrigo de Lana</h2>
+                            <p class="product-modal__price">$149.00</p>
+                            <p class="product-modal__description">
+                                Abrigo de mezcla de lana de primera calidad, diseñado para el minimalismo moderno.
+                                Silueta entallada con un estilo atemporal y
+                                estructura cómoda.
+                            </p>
+
+                            <div class="product-modal__section">
+                                <span class="product-modal__label">Tallas</span>
+                                <div class="product-modal__sizes">
+                                    <button>C</button>
+                                    <button>M</button>
+                                    <button>G</button>
+                                </div>
+                            </div>
+
+                            <div class="product-modal__section">
+                                <span class="product-modal__label">Colores</span>
+                                <div class="product-modal__colors">
+                                    <span class="color color--black"></span>
+                                    <span class="color color--beige"></span>
+                                    <span class="color color--gray"></span>
+                                </div>
+                            </div>
+                            <button class="product-modal__cta">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
